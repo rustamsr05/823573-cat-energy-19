@@ -1,0 +1,34 @@
+.best-stats {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.best-stats__item {
+
+}
+
+.best-stats__data {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  text-align: center;
+  vertical-align: middle;
+
+  width: 124px;
+  height: 56px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.best-stats__description {
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-2;
+
+  width: 87px;
+  height: 22px;
+}

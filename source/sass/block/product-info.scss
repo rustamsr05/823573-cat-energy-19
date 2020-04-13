@@ -1,0 +1,35 @@
+.product-info {
+  margin-left: 50%;
+}
+
+.product-info__name {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product-info__feature {
+  width: 100%;
+  margin-bottom: 21px;
+
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-2;
+
+  border-collapse: collapse;
+}
+
+.product-info__order {
+  margin-bottom: 25px;
+}
+
+.product-info__more {
+  margin-bottom: 25px;
+  padding: 0;
+
+  background-color: $bg-2;
+  color: $color-2;
+}

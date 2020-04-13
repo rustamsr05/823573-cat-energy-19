@@ -1,0 +1,29 @@
+.first-screen {
+  padding-top: 30px;
+
+  background-image: url('../img/index-background-mobile@1x.jpg');
+  background-repeat: no-repeat;
+
+  text-align: center;
+  color: #ffffff;
+}
+
+.first-screen__heading {
+  font-size: 36px;
+  line-height: 36px;
+
+  margin: 0;
+}
+
+.first-screen__call {
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.first-screen__program-btn {
+  margin-bottom: 22px;
+}
