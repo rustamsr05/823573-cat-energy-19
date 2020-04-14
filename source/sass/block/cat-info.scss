@@ -1,0 +1,30 @@
+.cat-info {
+  margin-bottom: 23px;
+}
+
+.cat-info input{
+  margin-bottom: 14px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.cat-info__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cat-info__name {
+  width: 230px;
+  height: 45px;
+}
+
+.cat-info__weight {
+  width: 205px;
+  height: 45px;
+}
+
+.cat-info__age {
+  width: 172px;
+  height: 45px;
+}

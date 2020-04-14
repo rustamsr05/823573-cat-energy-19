@@ -1,0 +1,31 @@
+.example-result {
+    padding: 20px;
+    background-color: $bg-2;
+}
+
+.example-result__heading {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.example-result__history {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-2;
+}
+
+.example-result__cost {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  text-align: center;
+}

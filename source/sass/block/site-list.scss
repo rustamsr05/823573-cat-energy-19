@@ -1,0 +1,14 @@
+.site-list {
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+}
+
+.site-list__item {
+  width: 320px;
+  height: 65px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,30 @@
+.cat-contacts label {
+  padding: 0;
+}
+
+.cat-contacts__legend {
+  font-size: 24px;
+  line-height: 24px;
+
+  margin-bottom: 30px;
+}
+
+.cat-contacts__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  margin-bottom: 14px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.cat-contacts__mail {
+  width: 220px;
+  height: 45px;
+}
+
+.cat-contacts__phone {
+  width: 205px;
+  height: 45px;
+}
