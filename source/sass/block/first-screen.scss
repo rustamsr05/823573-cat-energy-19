@@ -1,29 +1,109 @@
-.first-screen {
-  padding-top: 30px;
+@media (max-width: $mobile-width) {
 
-  background-image: url('../img/index-background-mobile@1x.jpg');
-  background-repeat: no-repeat;
+  .first-screen {
+    padding-top: 30px;
 
-  text-align: center;
-  color: #ffffff;
+    background-image: url('../img/index-background-mobile@1x.jpg');
+    background-repeat: no-repeat;
+
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .first-screen__heading {
+    font-size: 36px;
+    line-height: 36px;
+
+    margin: 0;
+  }
+
+  .first-screen__call {
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+
+  .first-screen__program-btn {
+    margin-bottom: 22px;
+  }
+
 }
 
-.first-screen__heading {
-  font-size: 36px;
-  line-height: 36px;
 
-  margin: 0;
+@media (min-width: $tablet-width) {
+
+  .first-screen {
+    position: relative;
+
+    padding-top: 0;
+    padding-bottom: 530px;
+    padding-left: 120px;
+
+    background: none;
+
+    text-align: left;
+    color: $color-1;
+  }
+
+  .first-screen__heading {
+    font-size: 60px;
+    line-height: 60px;
+
+    margin: 0;
+    margin-bottom: 33px;
+  }
+
+  .first-screen__call {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  .first-screen__image {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+  }
+
+  .first-screen__program-btn {
+    width: 245px;
+    height: 52px;
+    padding-top: 14px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
 }
 
-.first-screen__call {
-  margin-top: 20px;
-  margin-bottom: 30px;
+@media (min-width: $desktop-width) {
 
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
-}
+  .first-screen {
+    position: relative;
 
-.first-screen__program-btn {
-  margin-bottom: 22px;
+    padding-bottom: 188px;
+    padding-left: 83px;
+  }
+
+  .first-screen__heading {
+    width: 450px;
+  }
+
+  .first-screen__heading--index-page {
+    padding-top: 30px;
+  }
+
+  .first-screen__image {
+    top: 0;
+    left: 50%;
+
+    z-index: 3;
+  }
 }

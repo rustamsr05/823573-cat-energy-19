@@ -1,39 +1,101 @@
 .product-list {
-  list-style: none;
+    list-style: none;
 
-  padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
-}
-
-.product-list__item {
-  padding-right: 20px;
-  padding-top: 23px;
-  padding-left: 20px;
-
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-  &:last-child {
-    padding-top: 81px;
+    padding: 0;
+    margin: 0;
   }
+
+@media (max-width: $mobile-width) {
+
+  .product-list {
+    margin-bottom: 30px;
+  }
+
+  .product-list__item {
+    padding-right: 20px;
+    padding-top: 23px;
+    padding-left: 20px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:last-child {
+      padding-top: 81px;
+    }
+  }
+
+  .product-list__show-more {
+    margin: 0;
+    margin-bottom: 9px;
+
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .product-list__taste-more {
+    margin: 0;
+    margin-bottom: 20px;
+
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-2;
+  }
+
 }
 
-.product-list__show-more {
-  margin: 0;
-  margin-bottom: 9px;
+@media (min-width: $tablet-width) {
 
-  text-align: center;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 70px;
+  }
+
+  .product-list__item {
+    width: 324px;
+    height: 431px;
+
+    padding-top: 165px;
+    padding-bottom: 40px;
+    margin-top: 140px;
+
+    text-align: center;
+
+    background-color: $bg-2;
+
+    &:last-child {
+      background-color: $bg-1;
+
+      border: 1px solid #cdcdcd;
+    }
+  }
+
 }
 
-.product-list__taste-more {
-  margin: 0;
-  margin-bottom: 20px;
+@media (min-width: $desktop-width) {
 
-  text-align: center;
-  font-size: 12px;
-  line-height: 16px;
-  color: $color-2;
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 80px;
+  }
+
+  .product-list__item {
+    width: 245px;
+    height: 431px;
+
+    padding-top: 165px;
+    margin-top: 140px;
+
+    text-align: center;
+
+    background-color: $bg-2;
+  }
+
 }
