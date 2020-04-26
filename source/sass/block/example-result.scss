@@ -1,3 +1,15 @@
+.example-result__heading {
+  font-weight: 400;
+
+  margin: 0;
+}
+
+.example-result__history {
+  margin: 0;
+
+  font-family: 'Arial';
+}
+
 @media (max-width: $mobile-width) {
 
   .example-result {
@@ -6,7 +18,6 @@
   }
 
   .example-result__heading {
-    margin: 0;
     margin-bottom: 20px;
 
     font-size: 36px;
@@ -14,7 +25,6 @@
   }
 
   .example-result__history {
-    margin: 0;
     margin-bottom: 25px;
 
     font-size: 14px;
@@ -40,6 +50,12 @@
     padding-top: 50px;
   }
 
+  .example-result__wrapper {
+
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
   .example-result__heading {
     font-size: 60px;
     line-height: 60px;
@@ -62,12 +78,18 @@
     text-transform: uppercase;
   }
 
+    .example-result__toggle {
+    background-color: $bg-2;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
 
   .example-result {
     position: relative;
+
+    width: 100%
   }
 
   .example-result__wrapper {
@@ -79,7 +101,6 @@
   }
 
   .example-result__history {
-    margin: 0;
     margin-bottom: 70px;
   }
 

@@ -1,9 +1,13 @@
 .product-list {
-    list-style: none;
+  list-style: none;
 
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
   }
+
+.product-list__item {
+  position: relative;
+}
 
 @media (max-width: $mobile-width) {
 

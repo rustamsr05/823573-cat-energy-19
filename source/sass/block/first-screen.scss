@@ -1,3 +1,9 @@
+.first-screen__heading {
+  font-weight: 400;
+
+  margin: 0;
+}
+
 @media (max-width: $mobile-width) {
 
   .first-screen {
@@ -13,8 +19,6 @@
   .first-screen__heading {
     font-size: 36px;
     line-height: 36px;
-
-    margin: 0;
   }
 
   .first-screen__call {
@@ -38,6 +42,7 @@
   .first-screen {
     position: relative;
 
+    width: 708px;
     padding-top: 0;
     padding-bottom: 530px;
     padding-left: 120px;
@@ -52,7 +57,6 @@
     font-size: 60px;
     line-height: 60px;
 
-    margin: 0;
     margin-bottom: 33px;
   }
 

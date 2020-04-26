@@ -3,8 +3,10 @@
   .site-list {
     font-size: 20px;
     line-height: 20px;
-    color: #111111;
+    font-weight: 500;
   }
+
+
 
   .site-list__item {
     width: 320px;
@@ -13,6 +15,10 @@
     padding-top: 20px;
 
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .site-list__item a {
+    color: $color-1;
   }
 
 }
@@ -26,6 +32,11 @@
   .site-list__item {
     margin-left: 36px;
   }
+
+  .site-list__item a {
+    color: $color-1;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -35,7 +46,7 @@
     line-height: 25px;
   }
 
-  .site-list--index-page {
+  .site-list--index-page a {
     color: #ffffff;
   }
 }

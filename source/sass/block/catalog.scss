@@ -1,3 +1,9 @@
+.catalog__main-heading {
+  font-weight: 400;
+
+  margin: 0;
+}
+
 @media (max-width: $mobile-width) {
 
   .catalog {
@@ -9,7 +15,6 @@
     font-size: 36px;
     line-height: 60px;
 
-    margin: 0;
     padding: 20px;
 
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -39,8 +44,6 @@
   .catalog__main-heading {
     font-size: 60px;
     line-height: 60px;
-
-    margin: 0;
   }
 
   .product-info__feature {

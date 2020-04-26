@@ -2,7 +2,11 @@
 .weight-program {
   list-style: none;
 
+  width: 708px;
+
   margin: 0;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0;
 }
 
@@ -12,15 +16,36 @@
   background-color: $bg-2;
 }
 
+.weight-program__heading {
+  font-weight: 400;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.weight-program__description {
+  font-family: 'Arial';
+}
+
+.weight-program__link {
+  color: $color-1;
+}
+
 @media (max-width: $mobile-width) {
 
   .weight-program {
+    padding-right: 20px;
+    padding-left: 20px;
     margin-bottom: 20px;
   }
 
   .weight-program__item {
-    padding: 22px;
+    width: 280px;
+
     padding-top: 33px;
+    padding-right: 22px;
+    padding-bottom: 22px;
+    padding-left: 22px;
 
     &--slim {  /* почему так работает, но выделяет, а если отдельно пишу, то не работает */
       margin-bottom: 20px;
@@ -40,10 +65,8 @@
   }
 
   .weight-program__heading {
-    margin: 0;
     margin-bottom: 22px;
 
-    text-transform: uppercase;
     font-size: 24px;
     line-height: 37px;
     text-align: center;
@@ -72,20 +95,23 @@
 @media (min-width: $tablet-width) {
 
   .weight-program__item {
-    padding-top: 80px;
-    padding-bottom: 56px;
-    padding-left: 52px;
-    margin-bottom: 30px;
+    width: 708px;
 
+    padding-top: 80px;
+    padding-right: 285px;
+    padding-bottom: 60px;
+    padding-left: 52px;
+  }
+
+  .weight-program__item--slim {
+    margin-bottom: 30px;
   }
 
   .weight-program__heading {
-    margin: 0;
     margin-bottom: 26px;
 
     font-size: 36px;
     line-height: 36px;
-    text-transform: uppercase;
 
     &::before {
       content: "";
@@ -130,9 +156,17 @@
     justify-content: space-between;
 
     padding-top: 80px;
+    width: 1220px;
   }
 
   .weight-program__item {
+    margin: 0;
+
+    padding-top: 80px;
+    padding-right: 56px;
+    padding-bottom: 60px;
+    padding-left: 52px;
+
     width: 570px;
   }
 
@@ -158,7 +192,6 @@
     width: 462px;
     margin: 0;
     margin-bottom: 36px;
-
 
     font-size: 16px;
     line-height: 24px;
