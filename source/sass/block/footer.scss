@@ -6,13 +6,17 @@ display: flex;
   list-style: none;
 }
 
+.footer {
+  width: 100%;
+
+  background-color: $bg-2;
+}
+
 @media (max-width: $mobile-width) {
 
-  .footer {
+  .footer__wrapper {
     width: 320px;
     margin: 0 auto;
-
-    background-color: $bg-2;
   }
 
   .footer__logo {
@@ -38,7 +42,7 @@ display: flex;
 
 @media (min-width: $tablet-width) {
 
-  .footer {
+  .footer__wrapper {
     width: 768px;
     margin: 0 auto;
     }
@@ -55,7 +59,7 @@ display: flex;
 
 @media (min-width: $desktop-width) {
 
-  .footer {
+  .footer__wrapper {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
