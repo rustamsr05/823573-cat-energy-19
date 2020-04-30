@@ -8,13 +8,15 @@ display: flex;
 
 .footer {
   width: 100%;
+}
 
+.footer__bottom {
   background-color: $bg-2;
 }
 
 @media (max-width: $mobile-width) {
 
-  .footer__wrapper {
+  .footer__bottom-wrapper {
     width: 320px;
     margin: 0 auto;
   }
@@ -42,26 +44,21 @@ display: flex;
 
 @media (min-width: $tablet-width) {
 
-  .footer__wrapper {
+  .footer__bottom-wrapper {
     width: 768px;
+    min-height: 150px;
     margin: 0 auto;
-    }
 
-  .footer__bottom {
     display: flex;
     justify-content: space-between;
-
-    min-height: 150px;
-    background-color: $bg-2;
-  }
+    }
 
 }
 
 @media (min-width: $desktop-width) {
 
-  .footer__wrapper {
-    width: 100%;
-    max-width: 1440px;
+  .footer__bottom-wrapper {
+    width: 1220px;
     margin: 0 auto;
   }
 
