@@ -93,18 +93,16 @@
 @media (min-width: $desktop-width) {
 
   .main-nav {
-    position: relative;
-
     z-index: 2;
   }
 
   .main-nav--index-page::before {
     position: absolute;
-    top: -53px;
-    right: -110px;
+    top: 0;
+    right: 0;
 
     content: '';
-    width: 720px;
+    width: 50%;
     height: 696px;
 
     background-color: #68b738;
