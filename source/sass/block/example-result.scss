@@ -67,6 +67,8 @@
   .example-result__heading {
     font-size: 60px;
     line-height: 60px;
+
+    padding-left: 30px;
   }
 
   .example-result__text-wrapper {
@@ -108,6 +110,7 @@
     padding-top: 75px;
     padding-right: 800px;
     padding-bottom: 75px;
+    padding-left: 0;
   }
 
   .example-result__history {

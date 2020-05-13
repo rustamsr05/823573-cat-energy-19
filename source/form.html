@@ -15,18 +15,18 @@
         <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy">
       </a>
 
-      <nav class="header__nav main-nav">
+      <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__index" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__catalog" href="catalog.html">Каталог продукции</a>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__catalog">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__form site-list__item--active">Подбор программы</a>
+              <a class="site-list__form" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -42,51 +42,55 @@
 
       <form class="form__program-selection" method="post" action="https://echo.htmlacademy.ru">
 
-        <fieldset class="form__info cat-info">
-          <legend class="visually-hidden">Параметры кота</legend>
-          <label class="cat-info__item">
-            Имя:*
-            <input class="cat-info__name" type="text" name="name" placeholder="Барсик">
-          </label>
-          <label class="cat-info__item">
-            Вес (кг):*
-            <input class="cat-info__weight" type="text" name="weight" placeholder="7">
-          </label>
-          <label class="cat-info__item">
-            Возраст (лет):
-            <input class="cat-info__age" type="text" name="age" placeholder="7">
-          </label>
-        </fieldset>
+        <div class="form__infogoal-wrapper">
+          <fieldset class="form__info cat-info">
+            <legend class="visually-hidden">Параметры кота</legend>
+            <label class="cat-info__item">
+              Имя:*
+              <input class="cat-info__name" type="text" name="name" placeholder="Барсик">
+            </label>
+            <label class="cat-info__item">
+              Вес (кг):*
+              <input class="cat-info__weight" type="text" name="weight" placeholder="7">
+            </label>
+            <label class="cat-info__item">
+              Возраст (лет):
+              <input class="cat-info__age" type="text" name="age" placeholder="7">
+            </label>
+          </fieldset>
 
-        <fieldset class="form__goal cat-goal">
-          <legend class="visually-hidden">Цель</legend>
-          <label class="cat-goal__item">
-            <input class="cat-goal__slim" type="radio" name="goal" value="slim" checked>
-            <span class="cat-goal__radio"></span>
-            Похудение
-          </label>
-          <label class="cat-goal__item">
-            <input class="cat-goal__mass" type="radio" name="goal" value="mass">
-            <span class="cat-goal__radio"></span>
-            Набор массы
-          </label>
-          <label class="cat-goal__item">
-            <input class="cat-goal__advice" type="radio" name="goal" value="advice">
-            <span class="cat-goal__radio"></span>
-            Не знаю (нужен ваш совет)
-          </label>
-        </fieldset>
+          <fieldset class="form__goal cat-goal">
+            <legend class="visually-hidden">Цель</legend>
+            <label class="cat-goal__item">
+              <input class="cat-goal__slim" type="radio" name="goal" value="slim" checked>
+              <span class="cat-goal__radio"></span>
+              Похудение
+            </label>
+            <label class="cat-goal__item">
+              <input class="cat-goal__mass" type="radio" name="goal" value="mass">
+              <span class="cat-goal__radio"></span>
+              Набор массы
+            </label>
+            <label class="cat-goal__item">
+              <input class="cat-goal__advice" type="radio" name="goal" value="advice">
+              <span class="cat-goal__radio"></span>
+              Не знаю (нужен ваш совет)
+            </label>
+          </fieldset>
+        </div>
 
         <fieldset class="form__contacts cat-contacts">
           <legend class="cat-contacts__legend">Контактные данные (владельца кота)</legend>
-          <label class="cat-contacts__item">
-            E-mail:*
-            <input class="cat-contacts__mail" type="email" name="mail" placeholder="kuklachev@gmail.com">
-          </label>
-          <label class="cat-contacts__item">
-            Телефон:*
-            <input class="cat-contacts__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
-          </label>
+          <div class="cat-contacts__wrapper">
+            <label class="cat-contacts__item">
+              E-mail:*
+              <input class="cat-contacts__mail" type="email" name="mail" placeholder="kuklachev@gmail.com">
+            </label>
+            <label class="cat-contacts__item">
+              Телефон:*
+              <input class="cat-contacts__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+            </label>
+          </div>
         </fieldset>
 
         <fieldset class="form__comments cat-comments">
@@ -96,33 +100,36 @@
 
         <fieldset class="form__add cat-add">
           <legend class="cat-add__legend">Дополнительно</legend>
-          <label class="cat-add__item">
-            <input class="cat-add__sugar" type="checkbox" name="sugar" checked>
-            <span class="cat-add__checkbox"></span>
-            Сахарозаменитель
-          </label>
-          <label class="cat-add__item">
-            <input class="cat-add__water" type="checkbox" name="water">
-            <span class="cat-add__checkbox"></span>
-            Питьевая вода
-          </label>
-          <label class="cat-add__item">
-            <input class="cat-add__milk" type="checkbox" name="milk">
-            <span class="cat-add__checkbox"></span>
-            Молоко
-          </label>
-          <label class="cat-add__item">
-            <input class="cat-add__vitamin" type="checkbox" name="vitamin">
-            <span class="cat-add__checkbox"></span>
-            Витамины
-          </label>
+          <div class="cat-add__wrapper">
+            <label class="cat-add__item">
+              <input class="cat-add__sugar" type="checkbox" name="sugar" checked>
+              <span class="cat-add__checkbox"></span>
+              Сахарозаменитель
+            </label>
+            <label class="cat-add__item">
+              <input class="cat-add__water" type="checkbox" name="water">
+              <span class="cat-add__checkbox"></span>
+              Питьевая вода
+            </label>
+            <label class="cat-add__item">
+              <input class="cat-add__milk" type="checkbox" name="milk">
+              <span class="cat-add__checkbox"></span>
+              Молоко
+            </label>
+            <label class="cat-add__item">
+              <input class="cat-add__vitamin" type="checkbox" name="vitamin">
+              <span class="cat-add__checkbox"></span>
+              Витамины
+            </label>
+          </div>
         </fieldset>
 
-        <button class="form__button button" type="submit">Отправить</button>
+        <div class="form__button-wrapper">
+          <button class="form__button button" type="submit">Отправить</button>
+          <p class="form__note">* — Обязательные поля</p>
+        </div>
 
       </form>
-
-      <p class="form__note">* — Обязательные поля</p>
 
     </main>
 
