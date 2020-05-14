@@ -1,14 +1,6 @@
-.advantages {
-  margin-bottom: 45px;
-}
-
 .advantages__heading {
-  font-size: 36px;
-  line-height: 60px;
-
+  font-weight: 400;
   margin: 0;
-  margin-bottom: 27px;
-  padding-left: 20px;
 }
 
 .advantages__list {
@@ -16,29 +8,114 @@
 
   margin: 0;
   padding: 0;
-  padding-left: 100px;
-  padding-right: 27px;
 }
 
 .advantages__item {
-  position: relative;
+  font-family: 'Arial';
+}
 
-  font-size: 14px;
-  line-height: 18px;
-  color: $color-2;
+  @media (max-width: $mobile-width) {
 
-  margin-bottom: 28px;
-
-  &::before {
-    content: "";
-    position: absolute;
-
-    top: -3px;
-    left: -80px;
-
-    width: 60px;
-    height: 60px;
-
-    background-color: $color-3;
+  .advantages {
+    margin-bottom: 45px;
   }
+
+  .advantages__heading {
+    font-size: 36px;
+    line-height: 60px;
+
+    margin-bottom: 27px;
+    padding-left: 20px;
+  }
+
+  .advantages__list {
+    padding-left: 100px;
+    padding-right: 27px;
+  }
+
+  .advantages__item {
+    position: relative;
+
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-2;
+
+    margin-bottom: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      top: -3px;
+      left: -80px;
+
+      width: 60px;
+      height: 60px;
+
+      background-color: $color-3;
+    }
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+
+  .advantages {
+    padding-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 708px;
+  }
+
+  .advantages__heading {
+    font-size: 60px;
+    line-height: 60px;
+
+    margin-bottom: 63px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    position: relative;
+
+    width: 50%;
+    padding-top: 117px;
+    padding-right: 110px;
+    padding-bottom: 50px;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-2;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      width: 80px;
+      height: 80px;
+
+      background-color: $color-3;
+    }
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .advantages {
+    width: 1220px;
+  }
+
+  .advantages__item {
+    width: 25%;
+  }
+
 }

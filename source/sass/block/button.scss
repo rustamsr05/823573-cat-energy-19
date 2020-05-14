@@ -1,18 +1,43 @@
 .button {
-  display: inline-block;
+    display: inline-block;
 
-  font: inherit;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #ffffff;
+    font: inherit;
+    text-transform: uppercase;
+    color: #ffffff;
 
-  text-align: center;
-  vertical-align: middle;
+    text-align: center;
+    vertical-align: middle;
 
-  width: 280px;
-  height: 40px;
-  padding-top: 10px;
-  border: none;
-  background-color: #68b738;
+    border: none;
+    background-color: #68b738;
+  }
+
+  @media (max-width: $mobile-width) {
+
+  .button {
+    font-size: 14px;
+    line-height: 18px;
+
+    width: 280px;
+    height: 40px;
+    padding-top: 10px;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+
+  .button {
+    display: inline-block;
+
+    text-align: center;
+
+    font: inherit;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #68b738;
+  }
+
+
 }

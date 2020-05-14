@@ -1,15 +1,46 @@
-.cat-add {
+@media (max-width: $mobile-width) {
+
+  .cat-add legend {
+    font-size: 24px;
+    line-height: 24px;
+
+    margin-bottom: 30px;
+  }
+
+  .cat-add__item {
+    display: block;
+    margin-bottom: 22px;
+  }
 
 }
 
-.cat-add legend {
-  font-size: 24px;
-  line-height: 24px;
+@media (min-width: $tablet-width) {
 
-  margin-bottom: 30px;
+  .cat-add legend {
+    font-size: 36px;
+    line-height: 36px;
+
+    margin-bottom: 50px;
+  }
+
+  .cat-add__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cat-add__item {
+    width: 315px;
+
+    margin-bottom: 50px;
+  }
+
+
 }
 
-.cat-add__item {
-  display: block;
-  margin-bottom: 22px;
+@media (min-width: $desktop-width) {
+
+  .cat-add__item {
+    width: 300px;
+  }
+
 }

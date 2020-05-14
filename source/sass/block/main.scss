@@ -1,4 +1,26 @@
-.main {
-  width: 320px;
+@media (max-width: $mobile-width) {
+
+  .main__wrapper {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+
+.main__wrapper {
+  width: 768px;
   margin: 0 auto;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+.main__wrapper {
+  width: 1440px;
+  margin: 0 auto;
+  }
+
 }

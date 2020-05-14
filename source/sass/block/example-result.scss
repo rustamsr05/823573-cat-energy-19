@@ -1,31 +1,133 @@
 .example-result {
-    padding: 20px;
-    background-color: $bg-2;
-}
+  width: 100%;
+  }
 
 .example-result__heading {
-  margin: 0;
-  margin-bottom: 20px;
+  font-weight: 400;
 
-  font-size: 36px;
-  line-height: 60px;
+  margin: 0;
 }
 
 .example-result__history {
   margin: 0;
-  margin-bottom: 25px;
 
-  font-size: 14px;
-  line-height: 18px;
-  color: $color-2;
+  font-family: 'Arial';
 }
 
-.example-result__cost {
-  margin: 0;
+@media (max-width: $mobile-width) {
 
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
+  .example-result {
+    background-color: $bg-2;
+  }
 
-  text-align: center;
+  .example-result__wrapper {
+    width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .example-result__heading {
+    margin-bottom: 20px;
+
+    font-size: 36px;
+    line-height: 60px;
+  }
+
+  .example-result__history {
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-2;
+  }
+
+  .example-result__cost {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    text-align: center;
+  }
+
 }
+
+@media (min-width: $tablet-width) {
+
+  .example-result {
+    background: linear-gradient(to top, $bg-2 200px, $bg-1 200px, $bg-1);
+  }
+
+  .example-result__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .example-result__heading {
+    font-size: 60px;
+    line-height: 60px;
+
+    padding-left: 30px;
+  }
+
+  .example-result__text-wrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .example-result__history {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-2;
+    padding-right: 63px;
+  }
+
+  .example-result__cost {
+    display: inline-block;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .example-result {
+    background: linear-gradient(to top, $bg-2 500px, $bg-1 500px, $bg-1);
+  }
+
+  .example-result__wrapper {
+    position: relative;
+
+    width: 1220px;
+    padding-top: 0;
+  }
+
+  .example-result__text-wrapper {
+    padding-top: 75px;
+    padding-right: 800px;
+    padding-bottom: 75px;
+    padding-left: 0;
+  }
+
+  .example-result__history {
+    margin-bottom: 70px;
+  }
+
+  .example-result__cost {
+    display: block;
+
+    margin: 0;
+  }
+
+  .example-result__toggle {
+    position: absolute;
+    top: 0;
+    right: 124px;
+  }
+
+}
+

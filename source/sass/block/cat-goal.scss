@@ -1,9 +1,38 @@
 .cat-goal {
-  display: flex;
+    display: flex;
 
-  border: 1px solid #ededed;
+    border: solid 1px #ededed;
 }
 
-.cat-goal__item {
-  margin-bottom: 26px;
+  @media (max-width: $mobile-width) {
+
+  .cat-goal {
+    display: flex;
+
+    border: solid 1px #ededed;
+  }
+
+  .cat-goal__item {
+    margin-bottom: 26px;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+
+  .cat-goal {
+    border: solid 1px #cdcdcd;
+  }
+
+  .cat-goal__item {
+    margin-bottom: 30px;
+  }
+
+
+}
+
+@media (min-width: $desktop-width) {
+
+
+
 }
