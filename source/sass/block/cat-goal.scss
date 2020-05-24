@@ -4,7 +4,25 @@
     border: solid 1px #ededed;
 }
 
-  @media (max-width: $mobile-width) {
+.cat-goal__input {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.cat-goal__radio {
+    position: absolute;
+    display: block;
+
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+
+@media (max-width: $mobile-width) {
 
   .cat-goal {
     display: flex;
@@ -13,7 +31,15 @@
   }
 
   .cat-goal__item {
+    padding-left: 45px;
     margin-bottom: 26px;
+  }
+
+  .cat-goal__radio {
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+    margin-left: -40px;
   }
 
 }
@@ -25,14 +51,26 @@
   }
 
   .cat-goal__item {
+    padding-left: 60px;
     margin-bottom: 30px;
   }
 
+  .cat-goal__radio {
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+    margin-left: -50px;
+  }
 
 }
 
 @media (min-width: $desktop-width) {
 
+  .cat-goal {
+    width: 570px;
+
+    border: solid 1px #cdcdcd;
+  }
 
 
 }

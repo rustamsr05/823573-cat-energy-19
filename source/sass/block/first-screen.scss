@@ -12,6 +12,10 @@
     background-image: url('../img/index-background-mobile@1x.jpg');
     background-repeat: no-repeat;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-mobile@2x.jpg");
+    }
+
     text-align: center;
     color: #ffffff;
   }
@@ -72,8 +76,12 @@
   .first-screen__image {
     position: absolute;
 
-    left: 0;
+    width: 709px;
+    height: 609px;
+
+    left: 30px;
     bottom: 0;
+    z-index: -2;
   }
 
   .first-screen__program-btn {
@@ -83,6 +91,8 @@
 
     font-size: 20px;
     line-height: 20px;
+
+    z-index: 2;
   }
 
 }
@@ -93,7 +103,7 @@
     position: relative;
 
     padding-bottom: 188px;
-    padding-left: 123px;
+    padding-left: 190px;
   }
 
   .first-screen__heading {
@@ -105,8 +115,11 @@
   }
 
   .first-screen__image {
-    top: 0;
-    left: 50%;
+    top: -50px;
+    left: 560px;
+
+    width: 552px;
+    height: 500px;
 
     z-index: 3;
   }

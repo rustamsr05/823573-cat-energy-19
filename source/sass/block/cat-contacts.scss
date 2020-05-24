@@ -22,19 +22,48 @@
   }
 
   .cat-contacts__mail {
+    position: relative;
+
     width: 220px;
     height: 45px;
 
     padding-right: 35px;
     padding-left: 16px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 15px;
+      right: 15px;
+
+      width: 18px;
+      height: 14px;
+
+      background-image: url(../../img/icon-mail.svg);
+    }
   }
 
   .cat-contacts__phone {
+    position: relative;
+
     width: 205px;
     height: 45px;
-
     padding-right: 35px;
     padding-left: 16px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 13px;
+      right: 12px;
+
+      width: 21px;
+      height: 21px;
+
+      background-image: url(../../img/icon-mail.svg);
+    }
   }
 
 }
@@ -74,6 +103,7 @@
 
   .cat-contacts__wrapper {
     display: flex;
+    justify-content: space-between;
   }
 
   .cat-contacts__mail {

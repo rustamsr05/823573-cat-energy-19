@@ -1,6 +1,9 @@
 .contacts p {
   margin: 0;
 }
+.contacts__info {
+  display: flex;
+}
 
 .contacts__adress {
   font-family: 'Arial';
@@ -13,13 +16,16 @@
 @media (max-width: $mobile-width) {
 
   .contacts__info {
-    display: flex;
-
     width: 320px;
     margin: 0 auto;
 
     padding: 28px 20px;
     background-color: $bg-1;
+  }
+
+  .contacts__info--catalog,
+  .contacts__info--form {
+    background: transparent;
   }
 
   .contacts__call {
@@ -43,7 +49,7 @@
 @media (min-width: $tablet-width) {
 
   .contacts__info {
-    display: flex;
+    justify-content: space-between;
 
     width: 768px;
     margin: 0 auto;
@@ -58,12 +64,17 @@
     font-size: 20px;
     line-height: 25px;
     text-transform: uppercase;
+
+    width: 155px;
   }
 
   .contacts__adress {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
     color: $color-2;
+
+    width: 155px;
   }
 
   .contacts__map iframe {

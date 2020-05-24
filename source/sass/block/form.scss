@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.form textarea {
+  resize: none;
+}
+
 .form label,
 .form input[placeholder],
 .form textarea[placeholder] {
@@ -14,6 +18,12 @@
 .form textarea[placeholder] {
   font-family: inherit;
   color: $color-4;
+}
+
+.form__heading {
+  font-weight: 400;
+
+  margin: 0;
 }
 
 @media (max-width: $mobile-width) {
@@ -32,7 +42,6 @@
   }
 
   .form__heading {
-    margin: 0;
     margin-bottom: 21px;
 
     font-size: 36px;
@@ -64,6 +73,10 @@
     margin: 0;
   }
 
+  .form__button {
+    margin-bottom: 20px;
+  }
+
 }
 
 @media (min-width: $tablet-width) {
@@ -77,8 +90,11 @@
     font-size: 60px;
     line-height: 60px;
 
-    margin: 0;
     margin-bottom: 50px;
+  }
+
+  .form__wrapper {
+    padding-left: 40px;
   }
 
   .form__call {
@@ -88,6 +104,19 @@
 
     font-size: 20px;
     line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .form__goal {
+    margin-bottom: 80px;
+  }
+
+  .form__contacts {
+    margin-bottom: 50px;
+  }
+
+  .form__button-wrapper {
+    margin-bottom: 70px;
   }
 
   .form label,
@@ -124,6 +153,16 @@
   .form {
     width: 1300px;
     margin: 0 auto;
+  }
+
+  .form__wrapper {
+    padding: 0;
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .form__heading {
+    padding-left: 40px;
   }
 
   .form__infogoal-wrapper {

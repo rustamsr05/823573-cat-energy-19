@@ -1,0 +1,135 @@
+.toggle__bar {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+}
+
+.toggle__btn {
+  padding: 0;
+  margin: 0;
+
+  color: $color-1;
+  background-color: transparent;
+}
+
+@media (max-width: $mobile-width) {
+
+  .toggle__bar {
+    width: 200px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 55px;
+
+      width: 84px;
+      height: 14px;
+
+      border: solid 1px #cdcdcd;
+      border-radius: 6px;
+    }
+  }
+
+  .toggle__btn {
+    font-size: 16px;
+    line-height: 20px;
+
+    width: 40px;
+    height: 18px;
+  }
+
+  .toggle__mark--before {
+    position: absolute;
+    bottom: 4px;
+    left: 61px;
+
+    width: 35px;
+    height: 6px;
+
+    background-color: $color-3;
+    border-radius: 3px;
+    }
+
+  .toggle__mark--after {
+    position: absolute;
+    bottom: 4px;
+    left: 96px;
+
+    width: 35px;
+    height: 6px;
+
+    background-color: $color-3;
+    border-radius: 3px;
+  }
+
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .toggle {
+    text-align: center;
+  }
+
+  .toggle__image {
+    width: 676px;
+    height: 500px;
+
+    margin-bottom: 20px;
+  }
+
+  .toggle__bar {
+    width: 570px;
+  }
+
+  .toggle__btn {
+    font-size: 20px;
+    line-height: 20px;
+
+    width: 50px;
+    height: 18px;
+  }
+
+  .toggle__btn--before::before {
+    content: "";
+
+    position: absolute;
+    bottom: 4px;
+    left: 70px;
+
+    width: 428px;
+    height: 6px;
+
+    background-color: #dcdcdc;
+    border-radius: 2.5px;
+  }
+
+  .toggle__btn--after::after {
+    content: "";
+
+    position: absolute;
+    bottom: -8px;
+    left: 270px;
+
+    width: 34px;
+    height: 34px;
+
+    background-color: $color-3;
+    border: 12px solid $bg-1;
+    border-radius: 50%;
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+
+
+
+}
+

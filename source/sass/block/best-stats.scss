@@ -12,27 +12,37 @@
     margin-bottom: 20px;
   }
 
+  .best-stats__item {
+    text-align: center;
+  }
+
   .best-stats__data {
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
-
     text-align: center;
-    vertical-align: middle;
 
     width: 124px;
     height: 56px;
-    border: 1px solid gray;
+    padding-top: 13px;
+
+    border: 1px solid #cdcdcd;
     border-radius: 3px;
   }
 
   .best-stats__description {
     font-size: 12px;
     line-height: 12px;
+    text-align: center;
     color: $color-2;
 
     width: 87px;
     height: 22px;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-top: -7px;
+
+    background-color: $bg-2;
   }
 
 }
@@ -40,13 +50,14 @@
 @media (min-width: $tablet-width) {
 
   .best-stats {
-    display: inline-block;
+    display: flex;
 
     padding: 0;
   }
 
   .best-stats__item {
     display: inline-block;
+
     margin-right: 42px;
   }
 
@@ -60,6 +71,7 @@
 
     width: 162px;
     height: 72px;
+    padding-top: 16px;
     border: 1px solid #cdcdcd;
     border-radius: 3px;
   }
@@ -68,9 +80,20 @@
     font-size: 14px;
     line-height: 14px;
     color: $color-2;
+    text-align: center;
 
-    width: 112px;
-    height: 10px;
+    margin: 0 auto;
+    margin-top: -10px;
+
+    background-color: $bg-1;
+  }
+
+  .best-stats__description--weight {
+    width: 114px;
+  }
+
+  .best-stats__description--time {
+    width: 142px;
   }
 
 }
@@ -82,6 +105,10 @@
 
     margin: 0;
     margin-bottom: 60px;
+  }
+
+  .best-stats__description {
+    background-color: $bg-2;
   }
 
 }
