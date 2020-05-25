@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+.product-list__item--more {
+  position: relative;
+}
+
 .product-list__show-more {
     text-align: center;
     text-transform: uppercase;
@@ -28,7 +32,7 @@
 
   .product-list__item {
     padding-right: 20px;
-    padding-top: 23px;
+
     padding-left: 20px;
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -48,6 +52,24 @@
 
     font-size: 16px;
     line-height: 20px;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 41px;
+      left: 145px;
+
+      width: 31px;
+      height: 2px;
+
+      background-color: rgba(34, 34, 34, 0.2);
+    }
+
+    &::before {
+      transform: rotate(90deg);
+    }
   }
 
   .product-list__taste-more {
@@ -73,11 +95,10 @@
   .product-list__item {
     width: 324px;
     height: 431px;
+    text-align: center;
 
     padding-bottom: 40px;
     margin-top: 140px;
-
-    text-align: center;
 
     background-color: $bg-2;
 
@@ -92,6 +113,8 @@
     padding-top: 166px;
     padding-right: 40px;
     padding-left: 40px;
+
+    text-align: right;
   }
 
   .product-list__image-wrapper--small {
@@ -107,6 +130,38 @@
     margin-top: -82px;
     margin-bottom: 40px;
   }
+
+  .product-list__show-more {
+    width: 135px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 85px;
+      left: 133px;
+
+      width: 61px;
+      height: 2px;
+
+      background-color: rgba(34, 34, 34, 0.2);
+    }
+
+    &::before {
+      transform: rotate(90deg);
+    }
+  }
+
+  .product-list__taste-more {
+    width: 170px;
+    margin-right: auto;
+    margin-bottom: 85px;
+    margin-left: auto;
+  }
+
 
 }
 
@@ -129,6 +184,27 @@
     text-align: center;
 
     background-color: $bg-2;
+  }
+
+  .product-list__show-more {
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 85px;
+      left: 93px;
+
+      width: 61px;
+      height: 2px;
+
+      background-color: rgba(34, 34, 34, 0.2);
+    }
+
+    &::before {
+      transform: rotate(90deg);
+    }
   }
 
 }
