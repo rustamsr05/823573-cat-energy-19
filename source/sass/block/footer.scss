@@ -16,6 +16,16 @@
   background-color: $bg-2;
 }
 
+.footer__logo--active:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.footer__logo--active:active {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
 @media (max-width: $mobile-width) {
 
   .footer--catalog,

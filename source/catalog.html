@@ -14,7 +14,7 @@
 
     <header class="header">
 
-      <a class="header__logo">
+      <a class="header__logo header__logo--active" href="index.html">
         <picture>
           <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -28,13 +28,13 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item site-list__item--on">
               <a class="site-list__index" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--off">
               <a class="site-list__catalog">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--on">
               <a class="site-list__form" href="form.html">Подбор программы</a>
             </li>
           </ul>
@@ -51,7 +51,7 @@
         <li class="product-list__item">
           <div class="product-list__wrapper">
             <p class="product-list__image-wrapper product-list__image-wrapper--small">
-              <a href="#">
+              <a href="#" name="pro">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
@@ -83,7 +83,7 @@
               </table>
             </div>
           </div>
-          <a class="button product-info__order" href="#">Заказать</a>
+          <a class="button button--green product-info__order" href="#">Заказать</a>
         </li>
         <li class="product-list__item">
           <div class="product-list__wrapper">
@@ -120,7 +120,7 @@
               </table>
             </div>
           </div>
-          <a class="button product-info__order" href="#">Заказать</a>
+          <a class="button button--green product-info__order" href="#">Заказать</a>
         </li>
         <li class="product-list__item">
           <div class="product-list__wrapper">
@@ -157,7 +157,7 @@
               </table>
             </div>
           </div>
-          <a class="button product-info__order" href="#">Заказать</a>
+          <a class="button button--green product-info__order" href="#">Заказать</a>
         </li>
         <li class="product-list__item">
           <div class="product-list__wrapper">
@@ -194,12 +194,12 @@
               </table>
             </div>
           </div>
-          <a class="button product-info__order" href="#">Заказать</a>
+          <a class="button button--green product-info__order" href="#">Заказать</a>
         </li>
         <li class="product-list__item">
           <div class="product-list__wrapper">
             <p class="product-list__image-wrapper product-list__image-wrapper--small">
-              <a href="#">
+              <a href="#" name="slim">
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
@@ -231,7 +231,7 @@
               </table>
             </div>
           </div>
-          <a class="button product-info__order" href="#">Заказать</a>
+          <a class="button button--green product-info__order" href="#">Заказать</a>
         </li>
         <li class="product-list__item">
           <div class="product-list__wrapper">
@@ -268,7 +268,7 @@
               </table>
             </div>
           </div>
-          <a class="button product-info__order" href="#">Заказать</a>
+          <a class="button button--green product-info__order" href="#">Заказать</a>
         </li>
         <li class="product-list__item">
           <div class="product-list__wrapper">
@@ -305,12 +305,12 @@
               </table>
             </div>
           </div>
-          <a class="button product-info__order" href="#">Заказать</a>
+          <a class="button button--green product-info__order" href="#">Заказать</a>
         </li>
         <li class="product-list__item product-list__item--more">
           <p class="product-list__show-more">Показать еще 100500 товаров</p>
           <p class="product-list__taste-more">На самом деле вкусов гораздо больше!</p>
-          <button class="button product-info__more" type="button">Показать все</button>
+          <button class="button button--gray product-info__more" type="button">Показать все</button>
         </li>
       </ul>
 
@@ -326,7 +326,7 @@
                   <span class="add__price">200 Р.</span>
                 </div>
               </div>
-              <a class="button add__order" href="#">Заказать</a>
+              <a class="button button--green add__order" href="#">Заказать</a>
             </li>
             <li class="add__item">
               <div class="add__item-wrapper">
@@ -336,7 +336,7 @@
                   <span class="add__price">50 Р.</span>
                 </div>
               </div>
-              <a class="button add__order" href="#">Заказать</a>
+              <a class="button button--green add__order" href="#">Заказать</a>
             </li>
             <li class="add__item">
               <div class="add__item-wrapper">
@@ -346,7 +346,7 @@
                   <span class="add__price">100 Р.</span>
                 </div>
               </div>
-              <a class="button add__order" href="#">Заказать</a>
+              <a class="button button--green add__order" href="#">Заказать</a>
             </li>
             <li class="add__item">
               <div class="add__item-wrapper">
@@ -356,7 +356,7 @@
                   <span class="add__price">300 Р.</span>
                 </div>
               </div>
-              <a class="button add__order" href="#">Заказать</a>
+              <a class="button button--green add__order" href="#">Заказать</a>
             </li>
           </ul>
           <div class="add__gift">
@@ -377,24 +377,24 @@
           </div>
         </div>
         <div class="contacts__map">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002628!2d30.320858715419707!3d59.93871916905496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1588078718661!5m2!1sru!2skz" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002628!2d30.320858715419707!3d59.93871916905496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1588078718661!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </div>
 
       <div class="footer__bottom">
         <div class="footer__bottom-wrapper">
-          <div class="footer__logo">
+          <a class="footer__logo footer__logo--active" href="index.html">
             <svg width="128" height="24">
-              <use xlink:href="#logo-footer"></use>
+              <use xlink:href="#sprite-logo-footer"></use>
             </svg>
-          </div>
+          </a>
 
           <ul class="footer__social social-list">
             <li class="social-list__item">
               <a class="social-list__link social-list__link--vk" href="">
                 <span class="visually-hidden">VK</span>
                 <svg width="22" height="12">
-                  <use xlink:href="#icon-vk"></use>
+                  <use xlink:href="#sprite-icon-vk"></use>
                 </svg>
               </a>
             </li>
@@ -402,7 +402,7 @@
               <a class="social-list__link social-list__link--instagram" href="">
                 <span class="visually-hidden">Instagram</span>
                 <svg width="17" height="17">
-                  <use xlink:href="#icon-insta"></use>
+                  <use xlink:href="#sprite-icon-insta"></use>
                 </svg>
               </a>
             </li>
@@ -410,7 +410,7 @@
               <a class="social-list__link social-list__link--facebook" href="">
                 <span class="visually-hidden">facebook</span>
                 <svg width="10" height="19">
-                  <use xlink:href="#icon-fb"></use>
+                  <use xlink:href="#sprite-icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -420,7 +420,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span>HTML Academy</span>
               <svg class="copyright__logo" width="27" height="34">
-                <use xlink:href="#htmlacademy"></use>
+                <use xlink:href="#sprite-htmlacademy"></use>
               </svg>
             </a>
           </p>

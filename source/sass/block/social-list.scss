@@ -1,5 +1,14 @@
 .social-list svg {
-  fill: #666666;
+  color: #666666;
+}
+
+.social-list__link svg:hover {
+  color: #68b738;
+}
+
+.social-list__link svg:active {
+  color: #68b738;
+  opacity: 0.3;
 }
 
 @media (max-width: $mobile-width) {

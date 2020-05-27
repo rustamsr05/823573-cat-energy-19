@@ -1,3 +1,7 @@
+.cat-comments {
+  border: none;
+}
+
 @media (max-width: $mobile-width) {
 
   .cat-comments {
@@ -23,6 +27,7 @@
 
   .cat-comments {
     margin-bottom: 70px;
+    position: relative;
   }
 
   .cat-comments legend {
@@ -30,6 +35,32 @@
     line-height: 36px;
 
     margin-bottom: 70px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 20px;
+      right: 680px;
+
+      width: 100%;
+      height: 3px;
+
+      background-color: $color-3;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 20px;
+      left: 200px;
+
+      width: 100%;
+      height: 3px;
+
+      background-color: $color-3;
+    }
   }
 
   .cat-comments__text {
@@ -49,6 +80,18 @@
   .cat-comments__text {
     width: 1220px;
     height: 174px;
+  }
+
+  .cat-comments legend {
+    &::before {
+      top: 20px;
+      right: 1250px;
+    }
+
+    &::after {
+      top: 20px;
+      left: 250px;
+    }
   }
 
 }

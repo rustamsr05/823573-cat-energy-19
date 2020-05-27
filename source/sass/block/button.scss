@@ -12,7 +12,27 @@
     background-color: #68b738;
   }
 
-  @media (max-width: $mobile-width) {
+.button--green:hover {
+  cursor: pointer;
+  background-color: #5eaa2f;
+}
+
+.button--green:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5eaa2f;
+}
+
+.button--gray:hover {
+  cursor: pointer;
+  background-color: #ebebeb;
+}
+
+.button--gray:active {
+  color: rgba(68, 68, 68, 0.3);
+  background-color: #ebebeb;
+}
+
+@media (max-width: $mobile-width) {
 
   .button {
     font-size: 14px;

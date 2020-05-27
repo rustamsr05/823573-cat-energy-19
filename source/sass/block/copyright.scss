@@ -14,8 +14,21 @@
   color: $color-2;
 }
 
-.copyright__logo {
-  fill: #666666;
+.copyright__link:active {
+  opacity: 0.3;
+}
+
+.copyright__link svg:hover {
+  color: #68b738;
+}
+
+.copyright__link svg:active {
+  color: #68b738;
+  opacity: 0.3;
+}
+
+.copyright__link svg {
+  color: #666666;
  }
 
 @media (max-width: $mobile-width) {

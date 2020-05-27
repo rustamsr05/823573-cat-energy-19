@@ -1,3 +1,11 @@
+.site-list__item--on:hover {
+  opacity: 0.6;
+}
+
+.site-list__item--on:active {
+  opacity: 0.3;
+}
+
 @media (max-width: $mobile-width) {
 
   .site-list {
@@ -5,8 +13,6 @@
     line-height: 20px;
     font-weight: 500;
   }
-
-
 
   .site-list__item {
     width: 320px;
@@ -34,6 +40,10 @@
     padding: 12px 0;
   }
 
+  .site-list__item--off {
+    border-bottom: 2px solid $color-3;
+  }
+
   .site-list__item a {
     color: $color-1;
   }
@@ -49,5 +59,9 @@
 
   .site-list--index-page a {
     color: #ffffff;
+  }
+
+  .site-list--index-page .site-list__item--off {
+    border-bottom: 2px solid $bg-1;
   }
 }
