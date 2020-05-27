@@ -19,12 +19,12 @@
 }
 
 .cat-goal__radio {
-    position: absolute;
-    display: block;
+  position: absolute;
+  display: block;
 
-    border: 1px solid #cdcdcd;
-    border-radius: 50%;
-  }
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
 
 .cat-goal__radio::after {
   content: "";
@@ -53,9 +53,9 @@
   .cat-goal {
     display: flex;
 
+    padding: 20px;
+    margin-bottom: 35px;
     border: solid 1px #ededed;
-    border-left: none;
-    border-right: none;
   }
 
   .cat-goal__item {
@@ -115,6 +115,5 @@
 
     border: 1px solid #cdcdcd;
   }
-
 
 }

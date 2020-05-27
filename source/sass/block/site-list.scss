@@ -16,9 +16,9 @@
 
   .site-list__item {
     width: 320px;
-    height: 65px;
+    height: 67px;
 
-    padding-top: 20px;
+    padding-top: 21px;
 
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
@@ -36,8 +36,8 @@
   }
 
   .site-list__item {
-    margin-left: 36px;
-    padding: 12px 0;
+    margin-left: 51px;
+    padding: 9px 0;
   }
 
   .site-list__item--off {
@@ -64,4 +64,5 @@
   .site-list--index-page .site-list__item--off {
     border-bottom: 2px solid $bg-1;
   }
+
 }

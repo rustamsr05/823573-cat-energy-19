@@ -1,16 +1,16 @@
 .button {
-    display: inline-block;
+  display: inline-block;
 
-    font: inherit;
-    text-transform: uppercase;
-    color: #ffffff;
+  font: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
 
-    text-align: center;
-    vertical-align: middle;
+  text-align: center;
+  vertical-align: middle;
 
-    border: none;
-    background-color: #68b738;
-  }
+  border: none;
+  background-color: #68b738;
+}
 
 .button--green:hover {
   cursor: pointer;
@@ -58,6 +58,5 @@
 
     background-color: #68b738;
   }
-
 
 }

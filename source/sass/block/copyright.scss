@@ -1,17 +1,14 @@
 .copyright__link span {
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-2;
 }
 
 .copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.copyright__link span {
-  font-size: 16px;
-  line-height: 16px;
-  color: $color-2;
 }
 
 .copyright__link:active {
@@ -29,7 +26,7 @@
 
 .copyright__link svg {
   color: #666666;
- }
+}
 
 @media (max-width: $mobile-width) {
 

@@ -1,43 +1,39 @@
-@import 'variables.scss';
-@import 'global.scss';
-@import 'font.scss';
-@import 'visually-hidden.scss';
+@import "variables.scss";
+@import "global.scss";
+@import "font.scss";
+@import "visually-hidden.scss";
 
 /*header*/
-@import 'block/header.scss';
-@import 'block/main-nav';
-@import 'block/site-list.scss';
+@import "block/header.scss";
+@import "block/main-nav";
+@import "block/site-list.scss";
 
 /*index*/
-@import 'block/main.scss';
-@import 'block/first-screen.scss';
-@import 'block/button.scss';
-@import 'block/weight-program.scss';
-@import 'block/advantages.scss';
-@import 'block/example-result.scss';
-@import 'block/best-stats.scss';
-@import 'block/toggle.scss';
+@import "block/main.scss";
+@import "block/first-screen.scss";
+@import "block/button.scss";
+@import "block/weight-program.scss";
+@import "block/advantages.scss";
+@import "block/example-result.scss";
+@import "block/best-stats.scss";
+@import "block/toggle.scss";
 
 /*catalog*/
-@import 'block/catalog.scss';
-@import 'block/product-list.scss';
-@import 'block/product-info.scss';
-@import 'block/add.scss';
+@import "block/catalog.scss";
+@import "block/product-list.scss";
+@import "block/product-info.scss";
+@import "block/add.scss";
 
 /*form*/
-@import 'block/form.scss';
-@import 'block/cat-info.scss';
-@import 'block/cat-goal.scss';
-@import 'block/cat-contacts.scss';
-@import 'block/cat-comments.scss';
-@import 'block/cat-add.scss';
+@import "block/form.scss";
+@import "block/cat-info.scss";
+@import "block/cat-goal.scss";
+@import "block/cat-contacts.scss";
+@import "block/cat-comments.scss";
+@import "block/cat-add.scss";
 
 /*footer*/
-@import 'block/footer.scss';
-@import 'block/contacts.scss';
-@import 'block/social-list.scss';
-@import 'block/copyright.scss';
-
-
-
-
+@import "block/footer.scss";
+@import "block/contacts.scss";
+@import "block/social-list.scss";
+@import "block/copyright.scss";

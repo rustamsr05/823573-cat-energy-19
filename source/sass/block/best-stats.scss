@@ -1,5 +1,5 @@
 .best-stats__description {
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
 }
 
 @media (max-width: $mobile-width) {
@@ -9,7 +9,7 @@
     justify-content: space-between;
 
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .best-stats__item {

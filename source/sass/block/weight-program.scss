@@ -22,7 +22,7 @@
 }
 
 .weight-program__description {
-  font-family: 'Arial';
+  font-family: "Arial", sans-serif;
 }
 
 .weight-program__link {
@@ -38,20 +38,16 @@
   .weight-program {
     padding-right: 20px;
     padding-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
 
   .weight-program__item {
     width: 280px;
 
-    padding-top: 33px;
+    padding-top: 27px;
     padding-right: 22px;
     padding-bottom: 22px;
-    padding-left: 22px;
-
-    &--slim {  /* почему так работает, но выделяет, а если отдельно пишу, то не работает */
-      margin-bottom: 20px;
-    }
+    padding-left: 20px;
   }
 
   .weight-program__description {
@@ -59,18 +55,18 @@
     line-height: 18px;
     color: $color-2;
 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding-bottom: 23px;
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .weight-program__item--slim {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 
   .weight-program__heading {
-    margin-bottom: 22px;
+    margin-bottom: 31px;
     padding-left: 71px;
 
     font-size: 24px;
@@ -98,7 +94,7 @@
     width: 35px;
     height: 49px;
 
-    background-image: url(../img/icon-cat-slim.svg);
+    background-image: url("../img/icon-cat-slim.svg");
   }
 
   .weight-program__item--pro .weight-program__heading::after {
@@ -110,7 +106,7 @@
     width: 67px;
     height: 28px;
 
-    background-image: url(../img/icon-cat-pro.svg);
+    background-image: url("../img/icon-cat-pro.svg");
   }
 
   .weight-program__link {
@@ -128,7 +124,7 @@
       width: 25px;
       height: 12px;
 
-      background-image: url(../img/icon-right-arrow-long.svg);
+      background-image: url("../img/icon-right-arrow-long.svg");
     }
   }
 
@@ -154,7 +150,7 @@
   }
 
   .weight-program__heading {
-    margin-bottom: 26px;
+    margin-bottom: 22px;
 
     font-size: 36px;
     line-height: 36px;
@@ -173,7 +169,7 @@
   }
 
   .weight-program__description {
-    width: 370px;
+    width: 344px;
     margin: 0;
     margin-bottom: 56px;
 
@@ -191,7 +187,7 @@
     width: 140px;
     height: 194px;
 
-    background-image: url(../img/icon-cat-slim.svg);
+    background-image: url("../img/icon-cat-slim.svg");
   }
 
   .weight-program__item--pro .weight-program__heading::after {
@@ -203,7 +199,7 @@
     width: 268px;
     height: 112px;
 
-    background-image: url(../img/icon-cat-pro.svg);
+    background-image: url("../img/icon-cat-pro.svg");
   }
 
   .weight-program__link {
@@ -224,13 +220,11 @@
       width: 25px;
       height: 12px;
 
-      background-image: url(../img/icon-right-arrow-long.svg);
+      background-image: url("../img/icon-right-arrow-long.svg");
     }
   }
 
-
 }
-
 
 @media (min-width: $desktop-width) {
 
@@ -292,7 +286,7 @@
     width: 70px;
     height: 97px;
 
-    background-image: url(../img/icon-cat-slim.svg);
+    background-image: url("../img/icon-cat-slim.svg");
   }
 
   .weight-program__item--pro .weight-program__heading::after {
@@ -304,7 +298,7 @@
     width: 131px;
     height: 55px;
 
-    background-image: url(../img/icon-cat-pro.svg);
+    background-image: url("../img/icon-cat-pro.svg");
   }
 
 }

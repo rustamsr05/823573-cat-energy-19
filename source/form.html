@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy</title>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -58,11 +59,11 @@
               <legend class="visually-hidden">Параметры кота</legend>
               <label class="cat-info__item">
                 Имя:*
-                <input class="form__input cat-info__name" type="text" name="name" placeholder="Барсик">
+                <input class="form__input cat-info__name" type="text" name="name" placeholder="Барсик" required>
               </label>
               <label class="cat-info__item">
                 Вес (кг):*
-                <input class="form__input cat-info__weight" type="text" name="weight" placeholder="7">
+                <input class="form__input cat-info__weight" type="text" name="weight" placeholder="7" required>
               </label>
               <label class="cat-info__item">
                 Возраст (лет):
@@ -95,21 +96,17 @@
             <div class="cat-contacts__wrapper">
               <label class="cat-contacts__item">
                 E-mail:*
-                <div>
                 <input class="form__input cat-contacts__mail" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
                 <svg class="cat-contacts__icon" width="18" height="14">
                   <use xlink:href="#sprite-icon-mail"></use>
                 </svg>
-              </div>
               </label>
               <label class="cat-contacts__item">
                 Телефон:*
-                <div>
                 <input class="form__input cat-contacts__phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
                 <svg class="cat-contacts__icon" width="21" height="21">
                   <use xlink:href="#sprite-icon-phone"></use>
                 </svg>
-              </div>
               </label>
             </div>
           </fieldset>
@@ -146,7 +143,7 @@
           </fieldset>
 
           <div class="form__button-wrapper">
-            <button class="form__button button button--green" type="submit">Отправить</button>
+            <button class="form__button button button--green" type="submit">Отправить заявку</button>
             <p class="form__note">* — Обязательные поля</p>
           </div>
 
@@ -162,7 +159,7 @@
           <div class="contacts__info-wrapper">
             <div class="contacts__info contacts__info--form">
               <p class="contacts__call">Приглашаем к сотрудничеству дилеров!</p>
-              <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+              <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
             </div>
           </div>
           <div class="contacts__map">

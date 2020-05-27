@@ -1,10 +1,10 @@
 .toggle__bar {
-    position: relative;
+  position: relative;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .toggle__btn {
@@ -24,13 +24,15 @@
 
   .toggle__bar {
     width: 200px;
+    margin-top: 38px;
+    padding-top: 5px;
 
     &::before {
       content: "";
 
       position: absolute;
-      bottom: 0;
-      left: 55px;
+      bottom: 5px;
+      left: 59px;
 
       width: 84px;
       height: 14px;
@@ -50,8 +52,8 @@
 
   .toggle__mark--before {
     position: absolute;
-    bottom: 4px;
-    left: 61px;
+    bottom: 9px;
+    left: 64px;
 
     width: 35px;
     height: 6px;
@@ -62,8 +64,8 @@
 
   .toggle__mark--after {
     position: absolute;
-    bottom: 4px;
-    left: 96px;
+    bottom: 9px;
+    left: 101px;
 
     width: 35px;
     height: 6px;
@@ -131,10 +133,6 @@
 
 }
 
-
 @media (min-width: $desktop-width) {
 
-
-
 }
-
